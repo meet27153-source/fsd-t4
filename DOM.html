@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <!-- <p id="a1">Hi</p>
+        <p class="b1">I am class 1</p>
+        <p class="b1">I am class 2</p> -->
+        <script>
+            function fun(){
+                 document.getElementById("a1").innerHTML="How are you?"
+                 let x=document.getElementsByClassName("b1")
+                 for(var i=0;i<x.length;i++){
+                    x[i].innerHTML="Changed all class"
+                 }
+                 let y=document.querySelectorAll("p")
+                 for(var i=0;i<y.length;i++){
+                    y[i].style.color="red"
+                    y[i].style.backgroundColor="blue"
+                 }
+                }
+                function text(){
+                let z=document.querySelectorAll("p")
+                 for (var i=0;i<z.length;i++){
+                    z[i].style.textTransform="lowercase"
+                 }
+                 let z1=document.querySelectorAll("p")
+                 for (var i=0;i<z.length;i++){
+                    z1[i].style.textTransform="uppercase"
+                 }
+                }
+        </script>
+    </head>
+    <body>
+        <p id="a1">Hi</p>
+        <p class="b1">I am class 1</p>
+        <p class="b1">I am class 2</p>
+        <input type="button" value="change" onclick="fun()">
+        <input type="button" value="Lowercase" onclick="text()">
+        <input type="button" value="Uppercase" onclick="text()">
+
+    </body>
+</html>

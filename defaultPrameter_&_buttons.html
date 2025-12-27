@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <script>
+            function mul(a,b=10){
+                return a*b
+            }
+            let num1=mul(5)
+            console.log(num1)
+            let num2=mul(5,8)
+            console.log(num2)
+
+            function fun(bg,txt,size="50",fs="italic"){
+                i=document.getElementById("a1")
+                i.style.color=txt;
+                i.style.fontStyle=fs;
+                i.style.backgroundColor=bg;
+                i.style.fontSize=size
+            }
+
+            function warn(){
+                alert("This is alert")
+                document.write("You agree on Alert")
+            }
+
+            function conf(){
+                res=confirm("Do youb agree?")
+            if (res==true){
+                document.write("User agree")
+                return true
+            }
+            else{
+                document.write("User disagree")
+                return false
+            }
+            }
+            
+            function getVal(){
+                var res=prompt("Enter your name:","Username")
+                document.write(`Welcome ${res}`)
+            }
+        </script>
+    </head>    
+    <body>
+        <div id="a1">Hello</div>
+        <input type="submit" onclick="fun('tomato','blue')"  value="Click here">
+        <input type="button" onclick="warn()" value="Alert">
+        <input type="button" onclick="conf()" value="confirmation">
+        <input type="button" onclick="getVal()" value="Prompt">
+    </body>
+</html>

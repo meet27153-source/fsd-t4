@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <script>
+            // Implicit(on page load automatic)
+            (function (){
+                alert("Will trigger automatically")
+            })()
+            var a=function(a,b){
+                return a*b 
+            }
+            document.write(a(5,2)+"<br>")
+            function fun1(){
+                alert("You clicked")
+            }
+            function fun2(fname,lname){
+                document.write("Welcome "+fname+" "+lname)
+            }
+            // Explicit
+            function add(a,b){
+                return a+b
+            }
+            document.write(add(5,10)+"<br>")
+
+            function info(fname1,lname1){
+                var full=fname1+" "+lname1
+                return full
+            }
+            function hello(){
+                document.write(info('a','b'))
+            }
+            fun1=(val)=>'Hello '+val
+            document.write(fun1('world')+"<br>")
+            
+            const add2=(j,k)=>`${j+k}`
+            document.write(`Addition=${add2(5,9)}`+"<br>")
+        </script>
+        <body>
+            <input type="button" value="click me" onclick="fun1()">
+            <br>
+            <input type="button" value="login" onclick="fun2('ABC','PQR')">
+            <br>
+            <input type="button" value="click" onclick="hello()">
+        </body>
+    </head>
+</html>

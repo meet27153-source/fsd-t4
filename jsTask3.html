@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <script>
+            function registerUser(){
+                var user
+                if(user==="" || user===undefined || user===null){
+                    uname=prompt("Enter valid name")
+                }
+                let password
+                while(password===undefined || password===null || password.length<8){
+                    password=prompt("Enter valid password")
+                }
+                let conf=confirm("Are you sure you want to register with this username and password?")
+                if (conf==false){
+                    alert(`Registration cancel`)
+                    return
+                }
+                alert(`Registration done
+                username=${uname}
+                userpassword=${password}`)
+            }
+            registerUser()
+        </script>
+    </head>
+</html>

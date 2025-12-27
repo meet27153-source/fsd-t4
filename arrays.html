@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <script>
+            let fruits=["a","b"]
+            fruits.push("c")
+            document.write(fruits+"<br>")
+
+            let num=[1,2,3,4]
+            let r=num.pop()
+            document.write(num+"<br>")
+            document.write(r+"<br>")
+
+            let num1=[1,2,3,4]
+            let sq=num.map(a=>a*a)
+            document.write(sq+"<br>")
+
+            let age=[10,20,15,30]
+            let adult=age.filter(age=>age>18)
+            document.write(adult+"<br>")
+
+            let names=["a","b","c"]
+            names.forEach(name=>{
+                document.write("Hello "+name+"<br>")
+            })
+
+            let colors=["red","yellow","blue"]
+            document.write(colors.includes("red")+"<br>")
+            document.write(colors.includes("tomato")+"<br>")
+
+            let user=[{id:1,name:"a"},{id:2,name:"b"},{id:3,name:"c"}]
+            let data=user.find(u=>u.id===2)
+            document.write(data+"<br>")
+            document.write(user[0]+"<br>")
+            document.write(user[1].write+"<br>")
+
+
+        </script>
+    </head>
+</html>

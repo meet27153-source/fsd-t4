@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <script>
+            const students=[{name:"ABC",FSD:85},{name:"PQR",FSD:"abc"},{name:"XYZ",FSD:92}]
+            function gs(students){
+                let summary=""
+                for (let s of students){
+                    let marks=prompt(`Enter marks for ${s.name}`)
+                    if (marks===""||isNaN(marks)){
+                        alert("invalid grade")
+                        continue
+                    }
+                    s.FSD=Number(marks)
+                    summary=summary+`${s.name}:${s.FSD}\n`
+                }
+                alert(`FSD marks summary:\n ${summary}`)
+            }
+            gs(students)
+
+            a=2+true
+            document.write(a+"<br>")
+
+            b=true+2
+            document.write(b)
+        </script>
+    </head>
+</html>
