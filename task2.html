@@ -1,0 +1,20 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <div onmousedown="md(this)" onmouseup="mu(this)" style="background-color: blue;width: 100px;height: 100px">
+            Click Me
+        </div>
+        <script>
+            function md(e){
+                e.style.backgroundColor="gold"
+                e.innerHTML="clicked"
+            }
+            function mu(e){
+                e.style.backgroundColor="blue"
+                e.innerHTML="released"
+            }
+        </script>
+    </body>
+</html>

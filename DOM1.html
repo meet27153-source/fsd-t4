@@ -1,0 +1,26 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <p id="b" title="I am title">Hello</p>
+        <script>
+            document.getElementById("b").getAttribute("title")
+        </script>
+        <img id="a">
+        <script>
+            function func(){
+                document.getElementById("a").setAttribute("src","free.png")
+            }
+        </script>
+        <input type="button" onclick="func()" value="click">
+
+        <img id="a1" src="free.png">
+        <script>
+            let img=document.querySelector("#a1")
+            img.onclick=()=>{
+                img.setAttribute("src",img.getAttribute("src")==="free.png" ? "old.png":"free.png")
+            }
+        </script>
+    </body>
+</html>
